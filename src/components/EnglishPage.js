@@ -11,24 +11,34 @@ import {
   } from "react-router-dom";
 
 export default function EnglishPage() {
-    console.log("english");
+  const NavElementStyle = {
+    fontSize: 20,
+    display: "inline-block",
+    margin: "5px",
+    padding: "3px",
+    textDecoration: 'none',
+    backgroundColor: "#78c3ff",
+    width: "200px",
+    textAlign: "center"
+  }
+
     return (
         <div>
      <Router>
       <div>
         <nav>
           <ul>
-            <li>
-              <Link to="/english">Home</Link>
+            <li style={NavElementStyle}>
+              <Link to="/english" style={{textDecoration: 'none'}}>Home</Link>
             </li>
-            <li>
-              <Link to="/english/about">About</Link>
+            <li style={NavElementStyle}>
+              <Link to="/english/about" style={{textDecoration: 'none'}}>About</Link>
             </li>
-            <li>
-              <Link to="/english/references">References</Link>
+            <li style={NavElementStyle}>
+              <Link to="/english/references" style={{textDecoration: 'none'}}>References</Link>
             </li>
-            <li>
-              <Link to="/english/contact">Contact</Link>
+            <li style={NavElementStyle}>
+              <Link to="/english/contact" style={{textDecoration: 'none'}}>Contact</Link>
             </li>
           </ul>
         </nav>

@@ -1,8 +1,14 @@
 .Country-Picture-Hungary {
-    transform: translate(92%);
-  }
+  transform: translate(92%);
+}
 
-  .Country-Picture-England {
-    left: 50%;
-    transform: translate(95%);
-  }
+.Country-Picture-England {
+  left: 50%;
+  transform: translate(95%);
+}
+
+body {
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: #ffedfb;
+}
