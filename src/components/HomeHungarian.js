@@ -9,11 +9,11 @@ export default function HomeHungarian() {
         float: "left",
         borderRadius: "5%",
         borderStyle: "solid",
-        margin: "15px"
+        marginRight: "15px"
     }
 
     const textStyle = {
-        
+        textAlign: 'justify'
     }
 
     return (
