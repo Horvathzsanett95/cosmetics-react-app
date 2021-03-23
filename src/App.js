@@ -1,8 +1,10 @@
+import React from "react";
 import logoHungarian from './assets/HungarianFlag.svg';
 import logoEnglish from './assets/EnglishFlag.svg';
 import EnglishPage from './components/EnglishPage';
 import HungarianPage from './components/HungarianPage';
 import './App.css';
+
 
 
 import {
@@ -11,6 +13,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
 
 function App() {
 
@@ -26,8 +29,9 @@ function App() {
   }
  
   return (
+    <body>
     <div className="App">
-              <Router>
+      <Router>
       <div>
         <nav>
           <ul>
@@ -57,6 +61,7 @@ function App() {
       </div>
     </Router>
     </div>
+    </body>
   );
 }
 

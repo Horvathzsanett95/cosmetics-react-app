@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 import Home from './HomeHungarian';
 import Contact from './ContactHungarian';
 import About from './AboutHungarian';
@@ -10,24 +10,35 @@ import {
     Link
   } from "react-router-dom";
 
+
 export default function HungarianPage() {
+  const NavElementStyle = {
+    fontSize: 20,
+    display: "inline-block",
+    margin: "5px",
+    padding: "3px",
+    textDecoration: 'none',
+    backgroundColor: "#78c3ff",
+    width: "200px",
+    textAlign: "center"
+  }
     return (
-        <div>
-            <Router>
+      <div>
+      <Router>
       <div>
         <nav>
           <ul>
-            <li>
-              <Link to="/">Főoldal</Link>
+            <li style={NavElementStyle}>
+              <Link to="/" style={{textDecoration: 'none'}}>Főoldal</Link>
             </li>
-            <li>
-              <Link to="/about">Rólam</Link>
+            <li style={NavElementStyle}>
+              <Link to="/about" style={{textDecoration: 'none'}}>Rólam</Link>
             </li>
-            <li>
-              <Link to="/references">Referenciamunkáim</Link>
+            <li style={NavElementStyle}>
+              <Link to="/references" style={{textDecoration: 'none'}}>Referenciamunkáim</Link>
             </li>
-            <li>
-              <Link to="/contact">Kapcsolat</Link>
+            <li style={NavElementStyle}>
+              <Link to="/contact" style={{textDecoration: 'none'}}>Kapcsolat</Link>
             </li>
           </ul>
         </nav>
