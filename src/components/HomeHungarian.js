@@ -1,6 +1,7 @@
 import React from 'react'
 import mainPicture from '../assets/mainPicture.jpeg';
 
+
 export default function HomeHungarian() {
 
     const mainPictureStyle = {
@@ -18,7 +19,7 @@ export default function HomeHungarian() {
 
     return (
         <div>
-            
+ 
             <img src={mainPicture} alt="about cosmetics"style={mainPictureStyle}></img>
             <div className="Page-Content" style={textStyle}>
                 <h1 style={{textAlign: "center"}}>Üdvözöllek</h1>

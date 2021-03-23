@@ -3,6 +3,8 @@ import Home from './HomeHungarian';
 import Contact from './ContactHungarian';
 import About from './AboutHungarian';
 import References from './ReferencesHungarian';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './HungarianPage.scss';
 import {
     BrowserRouter as Router,
     Switch,
@@ -12,34 +14,24 @@ import {
 
 
 export default function HungarianPage() {
-  const NavElementStyle = {
-    fontSize: 20,
+  const menuItemStyle = {
     display: "inline-block",
-    margin: "5px",
-    padding: "3px",
     textDecoration: 'none',
-    backgroundColor: "#78c3ff",
-    width: "200px",
     textAlign: "center"
   }
+
     return (
-      <div>
-      <Router>
+       <div>
+       <Router>
       <div>
         <nav>
           <ul>
-            <li style={NavElementStyle}>
-              <Link to="/" style={{textDecoration: 'none'}}>Főoldal</Link>
-            </li>
-            <li style={NavElementStyle}>
-              <Link to="/about" style={{textDecoration: 'none'}}>Rólam</Link>
-            </li>
-            <li style={NavElementStyle}>
-              <Link to="/references" style={{textDecoration: 'none'}}>Referenciamunkáim</Link>
-            </li>
-            <li style={NavElementStyle}>
-              <Link to="/contact" style={{textDecoration: 'none'}}>Kapcsolat</Link>
-            </li>
+            
+            <Link to="/" style={menuItemStyle}><div class="vertical"><span class="text">Főoldal</span></div></Link>
+            <Link to="/about" style={menuItemStyle}><div class="vertical"><span class="text">Rólam</span></div></Link>
+            <Link to="/references" style={menuItemStyle}><div class="vertical"><span class="text">Munkáim</span></div></Link>
+            <Link to="/contact" style={menuItemStyle}><div class="vertical"><span class="text">Kapcsolat</span></div></Link>
+
           </ul>
         </nav>
 
@@ -58,7 +50,6 @@ export default function HungarianPage() {
           </Route>
         </Switch>
       </div>
-    </Router>
-        </div>
-    )
+    </Router> 
+    </div>      )
 }
