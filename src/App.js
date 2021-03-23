@@ -19,12 +19,13 @@ function App() {
 
   const navItemStyle = {
     position: "absolute",
+    float: "right",
     margin: "5px",
     padding: "3px",
     fontSize: 20,
     display: "inline-block",
     textDecoration: 'none',
-    width: "30px",
+    width: "30px"
 
   }
  
